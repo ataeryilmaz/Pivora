@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pivora - All-in-One, Offline-First PDF Studio</title>
+    <!-- Tailwind CSS CDN for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-400 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-file-pdf text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight text-white">Pivora</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-white transition">Features</a>
+                <a href="#toolbox" class="hover:text-white transition">PDF Toolbox</a>
+                <a href="#privacy" class="hover:text-white transition">Privacy</a>
+            </nav>
+            <div>
+                <a href="https://github.com/ataeryilmaz/Pivora" target="_blank" class="flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 border border-slate-700/80 px-4 py-2.5 rounded-xl text-sm font-semibold transition shadow-sm">
+                    <i class="fa-brands fa-github text-lg"></i>
+                    <span>GitHub Repo</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 overflow-hidden">
+        <!-- Glow background effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-600/15 blur-[140px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/20 px-4 py-1.5 rounded-full text-indigo-400 text-xs font-bold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Free, Unlimited, Ad-Free</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+                All-in-One, Offline-First <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">PDF Studio</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-normal">
+                Designed for speed, privacy, and full creative control. Edit, sign, convert, and secure your documents directly on your device.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="https://github.com/ataeryilmaz/Pivora" target="_blank" class="bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-xl shadow-brand-600/25 transition flex items-center space-x-3 text-base">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Download on GitHub</span>
+                </a>
+                <a href="#toolbox" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold px-8 py-4 rounded-2xl transition flex items-center space-x-3 text-base">
+                    <i class="fa-solid fa-toolbox"></i>
+                    <span>Explore Tools</span>
+                </a>
+            </div>
+
+            <!-- App Meta Badges -->
+            <div class="mt-16 flex flex-wrap justify-center gap-8 text-sm text-slate-400 font-medium border-t border-slate-900 pt-8">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                    <span>100% Device-Only & Private</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-ban text-rose-400"></i>
+                    <span>Zero Ads or Trackers</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-infinity text-indigo-400"></i>
+                    <span>No Subscription Paywalls</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="py-24 bg-slate-900/40 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Powerful Creative & Editing Features</h2>
+                <p class="mt-4 text-slate-400">Everything you need to manipulate documents with absolute precision and native performance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-900/80 border border-slate-800/80 rounded-3xl p-8 hover:border-slate-700 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 text-xl">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Advanced PDF Studio</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Add multi-line text boxes with custom width, 12+ premium typography fonts, drag-and-drop images, and precise PencilKit drawing.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-slate-900/80 border border-slate-800/80 rounded-3xl p-8 hover:border-slate-700 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 text-xl">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Audio Reader (TTS)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Read documents out loud effortlessly with auto-fallback Vision OCR built specifically for scanned or image-based PDFs.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-slate-900/80 border border-slate-800/80 rounded-3xl p-8 hover:border-slate-700 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-6 text-xl">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sensitive Redaction</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Blackout or erase confidential details securely with redaction bars, highlight frames, and custom sticky notes.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-slate-900/80 border border-slate-800/80 rounded-3xl p-8 hover:border-slate-700 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 text-xl">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Save as Draft</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Keep your work fully intact. Seamlessly resume editing layers and custom text boxes whenever you want.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-slate-900/80 border border-slate-800/80 rounded-3xl p-8 hover:border-slate-700 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 text-xl">
+                        <i class="fa-solid fa-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sign & Stamp</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Stamp saved signature profiles with one single tap, burn permanent watermarks, and authorize documents securely.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-slate-900/80 border border-slate-800/80 rounded-3xl p-8 hover:border-slate-700 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6 text-xl">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">100% Private & Local</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">No cloud uploads, no external account required, and absolute device-only data storage for ultimate privacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Toolbox Grid -->
+    <section id="toolbox" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Comprehensive PDF Toolbox</h2>
+                <p class="mt-4 text-slate-400">Everything organized neatly so you can manage your files in seconds.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-object-ungroup text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Merge PDF</h4>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-scissors text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Split PDF</h4>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-compress text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Compress Size</h4>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-camera-rotate text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Scan & Convert</h4>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-shield-keyhole text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Protect / Unlock</h4>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-layer-group text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Organize Pages</h4>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-stamp text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Sign & Stamp</h4>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/60 p-6 rounded-2xl text-center hover:bg-slate-900 transition">
+                    <i class="fa-solid fa-file-image text-indigo-400 text-2xl mb-3"></i>
+                    <h4 class="font-semibold text-white text-sm">Export to JPEG</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="privacy" class="border-t border-slate-900 py-12 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-file-pdf text-sm"></i>
+                </div>
+                <span class="font-bold text-white tracking-tight">Pivora</span>
+                <span class="text-xs text-slate-500">© 2026. All rights reserved.</span>
+            </div>
+            
+            <div class="flex items-center space-x-6 text-sm text-slate-400">
+                <a href="privacy.html" class="hover:text-white transition font-medium">Privacy Policy</a>
+                <a href="https://github.com/ataeryilmaz/Pivora" target="_blank" class="hover:text-white transition flex items-center space-x-1.5">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
